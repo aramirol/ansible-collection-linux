@@ -1,9 +1,0 @@
----
-documentation:
-  - 'README.md'
-plugins:
-  - 'plugins/**/*'
-roles:
-  - any: ['roles/**/*', '.github/workflows/role_*']
-skip-changelog:
-  - any: ['.github/*', '.github/workflows/gh_*', 'molecule/**/*', 'requirements.txt', '*lint']
