@@ -9,12 +9,12 @@ on:
     paths:
       - 'roles/epel/**'
       - 'molecule/epel/**'
-      - '.github/workflows/role_epel.yaml'
+      - '.github/workflows/role_epel.yml'
   pull_request:
     paths:
       - 'roles/epel/**'
       - 'molecule/epel/**'
-      - '.github/workflows/role_epel.yaml'
+      - '.github/workflows/role_epel.yml'
 
 jobs:
   molecule:
