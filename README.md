@@ -44,11 +44,6 @@ collections:
 
 See [Ansible Using collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html) for more details.
 
-
-## Contributing to this collection
-If you want to develop new content for this collection or improve what is already here, please open an issue or create a PR
-
-
 ## More information
 - [Ansible Collection overview](https://github.com/ansible-collections/overview)
 - [Ansible User guide](https://docs.ansible.com/ansible/latest/user_guide/index.html)
@@ -58,3 +53,8 @@ If you want to develop new content for this collection or improve what is alread
 GNU General Public License v3.0 or later
 
 See [LICENSE](https://github.com/aramirol/ansible-collection-linux/blob/main/LICENSE) to see the full text.
+
+<!---
+## Contributing to this collection
+If you want to develop new content for this collection or improve what is already here, please open an issue or create a PR.
+-->
