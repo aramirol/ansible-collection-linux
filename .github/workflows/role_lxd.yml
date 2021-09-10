@@ -9,12 +9,12 @@ on:
     paths:
       - 'roles/lxd/**'
       - 'molecule/lxd/**'
-      - '.github/workflows/role_lxd.yaml'
+      - '.github/workflows/role_lxd.yml'
   pull_request:
     paths:
       - 'roles/lxd/**'
       - 'molecule/lxd/**'
-      - '.github/workflows/role_lxd.yaml'
+      - '.github/workflows/role_lxd.yml'
 
 jobs:
   matrix:
