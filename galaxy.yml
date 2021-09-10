@@ -2,7 +2,7 @@
 namespace: aramirol
 name: linux
 description: Linux roles collection for different purposes
-version: 1.0.2
+version: 1.0.3
 authors:
   - Angel Ramiro
 
@@ -21,12 +21,10 @@ dependencies:
 tags:
   - linux
   - system
-  - development
-  - networking
-  - packaging
-  - web
+  - collection
   - virtualization
-
+  - containers
+  
 build_ignore:
   - .ansible-lint
   - .cache
