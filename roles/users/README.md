@@ -1,4 +1,4 @@
-# Ansible Role: users
+# Ansible Role: aramirol.linux.users
 
 Manage Linux users and groups
 
@@ -26,7 +26,7 @@ managed_users:
 - name: Create ansible system group and users with this group
   gather_facts: false
   roles:
-    - role: bonddim.linux.users
+    - role: aramirol.linux.users
       managed_groups:
         - name: ansible
           system: true
@@ -42,7 +42,7 @@ managed_users:
   hosts: all
   gather_facts: false
   roles:
-    - role: bonddim.linux.users
+    - role: aramirol.linux.users
       managed_users:
         - name: ansible
           system: true

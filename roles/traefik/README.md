@@ -1,4 +1,4 @@
-# Ansible Role: traefik
+# Ansible Role: aramirol.linux.traefik
 
 Deploy and configure [Traefik v2](https://doc.traefik.io/traefik/) with TLS support
 
@@ -11,7 +11,7 @@ Clean role execution will give you:
 Docker daemon and Docker SDK for Python is required on target host if **docker** install method selected (see Role variables section below)
 
 ## Role Variables
-Variables with default values from [defaults/main.yml](https://github.com/bonddim/ansible-collection-linux/blob/main/roles/traefik/defaults/main.yml)
+Variables with default values from [defaults/main.yml](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/traefik/defaults/main.yml)
 ```yaml
 # Common vars
 traefik_version: latest  # version to install, ex. v2.3.4
@@ -59,7 +59,7 @@ traefik_provider_docker_endpoint: ""  # default docker endpoint unix:///var/run/
 # Custom dynamic config
 traefik_custom_config: {}  # Refer to traefik docs https://doc.traefik.io/traefik/reference/dynamic-configuration/file
 ```
-Variables with default values from [vars/main.yml](https://github.com/bonddim/ansible-collection-linux/blob/main/roles/traefik/vars/main.yml)
+Variables with default values from [vars/main.yml](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/traefik/vars/main.yml)
 
 These are the preferred values, use extra-vars to override ([ansible docs](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable))
 ```yaml
@@ -78,7 +78,7 @@ traefik_acme_storage_file: '{{ traefik_home }}/acme.json'
 - name: minimal setup with http
   hosts: all
   roles:
-    - bonddim.linux.traefik
+    - aramirol.linux.traefik
 
 - name: deploy traefik container and enable docker provider
   hosts: all
@@ -86,7 +86,7 @@ traefik_acme_storage_file: '{{ traefik_home }}/acme.json'
     traefik_install_method: docker
     traefik_provider_docker: true
   roles:
-    - bonddim.linux.traefik
+    - aramirol.linux.traefik
 
 - name: enable docker provider with tcp endpoint to docker socket
   hosts: all
@@ -94,7 +94,7 @@ traefik_acme_storage_file: '{{ traefik_home }}/acme.json'
     traefik_provider_docker: true
     traefik_provider_docker_endpoint: "tcp://host:port"
   roles:
-    - bonddim.linux.traefik
+    - aramirol.linux.traefik
 
 - name: minimal setup with https
   hosts: all
@@ -106,6 +106,5 @@ traefik_acme_storage_file: '{{ traefik_home }}/acme.json'
     traefik_env:
       DUCKDNS_TOKEN: "duckdns_token_value"
   roles:
-    - bonddim.linux.traefik
+    - aramirol.linux.traefik
 ```
-See my [home-server](https://github.com/bonddim/home-server) playbooks for real use examples

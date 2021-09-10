@@ -1,4 +1,4 @@
-# Ansible Role: bonddim.linux.adguardhome
+# Ansible Role: aramirol.linux.adguardhome
 
 Install [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)
 
@@ -7,7 +7,7 @@ Install [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)
 * Snapd daemon is required on target host if **snap** install method selected (see Role variables section below)
 
 ## Role Variables
-Variables with default values from [defaults/main.yml](https://github.com/bonddim/ansible-collection-linux/blob/main/roles/adguardhome/defaults/main.yml)
+Variables with default values from [defaults/main.yml](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/adguardhome/defaults/main.yml)
 ```yaml
 # Common vars
 adguardhome_home: /opt/AdGuardHome
@@ -43,20 +43,20 @@ adguardhome_snap_channel: latest/stable  # channel to install from snap
 - name: Install AdGuard Home binary to host
   hosts: all
   roles:
-    - bonddim.linux.adguard
+    - aramirol.linux.adguard
 
 - name: Install AdGuard Home docker container
   hosts: all
   vars:
     adguardhome_install_method: docker
   roles:
-    - bonddim.linux.adguard
+    - aramirol.linux.adguard
 
 - name: Install AdGuard Home snap
   hosts: all
   vars:
     adguardhome_install_method: snap
   roles:
-    - bonddim.linux.snapd
-    - bonddim.linux.adguard
+    - aramirol.linux.snapd
+    - aramirol.linux.adguard
 ```

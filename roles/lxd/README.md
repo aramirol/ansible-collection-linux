@@ -1,4 +1,4 @@
-# Ansible Role: bonddim.linux.lxd
+# Ansible Role: aramirol.linux.lxd
 
 Install latest version of LXD from [Snapcraft](https://snapcraft.io/store)<br>
 Migrate existing LXD configuration on Ubuntu systems
@@ -10,10 +10,10 @@ Migrate existing LXD configuration on Ubuntu systems
 * Fedora
 
 ## Dependencies
-From [meta/main.yaml](https://github.com/bonddim/ansible-collection-linux/blob/main/roles/lxd/meta/main.yml)
+From [meta/main.yaml](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/lxd/meta/main.yml)
 ```yaml
 dependencies:
-  - role: bonddim.linux.snapd
+  - role: aramirol.linux.snapd
     snap_packages:
       - lxd
 ```
@@ -27,7 +27,7 @@ lxd_users: []  # list of users to add to lxd group
 ```yaml
 - hosts: servers
   roles:
-    - role: bonddim.linux.lxd
+    - role: aramirol.linux.lxd
       lxd_users:
         - user1
         - user2

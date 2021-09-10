@@ -1,4 +1,4 @@
-# Ansible Role: snapd
+# Ansible Role: aramirol.linux.snapd
 
 Install snap core and packages from https://snapcraft.io/store
 
@@ -17,7 +17,7 @@ snap_packages: []  # optional list of packages to install from snap-store
 ```yaml
 - hosts: servers
   roles:
-    - role: bonddim.linux.snapd
+    - role: aramirol.linux.snapd
       snap_packages:
         - skype
         - name: code

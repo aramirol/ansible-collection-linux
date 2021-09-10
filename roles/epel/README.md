@@ -1,4 +1,4 @@
-# Ansible Role: bonddim.linux.epel
+# Ansible Role: aramirol.linux.epel
 
 Install Extra Packages for Enterprise Linux (EPEL)<br>
 Based on installation istructions from [Fedora](https://fedoraproject.org/wiki/EPEL) and [AWS](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-enable-epel/)
@@ -20,5 +20,5 @@ epel_package: 'https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansi
 ```yaml
 - hosts: rhel
   roles:
-    - bonddim.linux.epel
+    - aramirol.linux.epel
 ```
