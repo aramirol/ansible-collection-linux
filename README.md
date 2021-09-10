@@ -5,16 +5,15 @@
 [![Last commit](https://img.shields.io/github/last-commit/aramirol/ansible-collection-linux?logo=github)](https://github.com/aramirol/ansible-collection-linux/commits/main)
 
 ## Tested with Ansible
-Tested with the stable releases of Ansible 2.9 and 2.10 and the development version of Ansible
+Tested with Ansible 2.10.x
 
 
 ## Dependencies
-```yaml
+```yml
 collections:
   - name: community.general
   - name: community.docker
 ```
-
 
 ## Included content
 ### Roles
@@ -26,13 +25,12 @@ collections:
 | aramirol.linux.lxd | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/lxd/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/lxd/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_lxd.yaml?query=branch%3Amain) |
 | aramirol.linux.users | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/users/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/users/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_users.yaml?query=branch%3Amain) |
 
-
 ## Using this collection
 Before using the collection, you need to install the collection with the `ansible-galaxy` CLI:
-```bash
+
+```shell
 ansible-galaxy collection install aramirol.linux
 ```
-
 
 You can also include it in a `requirements.yml` file and install it via `ansible-galaxy collection install -r requirements.yml` using the format:
 ```yaml
@@ -42,17 +40,8 @@ collections:
 
 See [Ansible Using collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html) for more details.
 
-## More information
-- [Ansible Collection overview](https://github.com/ansible-collections/overview)
-- [Ansible User guide](https://docs.ansible.com/ansible/latest/user_guide/index.html)
-
-
 ## Licensing
 GNU General Public License v3.0 or later
 
 See [LICENSE](https://github.com/aramirol/ansible-collection-linux/blob/main/LICENSE) to see the full text.
 
-<!---
-## Contributing to this collection
-If you want to develop new content for this collection or improve what is already here, please open an issue or create a PR.
--->
