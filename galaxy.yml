@@ -2,7 +2,7 @@
 namespace: aramirol
 name: linux
 description: Simple linux roles collections for testing
-version: 1.0.4
+version: 1.0.5
 authors:
   - Angel Ramiro
 
