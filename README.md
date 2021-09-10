@@ -21,12 +21,9 @@ collections:
 
 | FQDN Name | Documentation | Build Status |
 | --------- | :-----------: | :----------: |
-| aramirol.linux.adguardhome | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/adguardhome/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/adguardhome/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_adguardhome.yaml?query=branch%3Amain) |
 | aramirol.linux.docker | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/docker/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/docker/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_docker.yaml?query=branch%3Amain) |
 | aramirol.linux.epel | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/epel/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/epel/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_epel.yaml?query=branch%3Amain) |
 | aramirol.linux.lxd | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/lxd/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/lxd/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_lxd.yaml?query=branch%3Amain) |
-| aramirol.linux.snapd | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/snapd/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/snapd/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_snapd.yaml?query=branch%3Amain) |
-| aramirol.linux.traefik | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/traefik/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/traefik/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_traefik.yaml?query=branch%3Amain) |
 | aramirol.linux.users | [Readme](https://github.com/aramirol/ansible-collection-linux/blob/main/roles/users/README.md) | [![](https://img.shields.io/github/workflow/status/aramirol/ansible-collection-linux/users/main?logo=github)](https://github.com/aramirol/ansible-collection-linux/actions/workflows/role_users.yaml?query=branch%3Amain) |
 
 
