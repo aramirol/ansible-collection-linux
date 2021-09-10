@@ -15,3 +15,24 @@ on:
       - 'roles/epel/**'
       - 'molecule/epel/**'
       - '.github/workflows/role_epel.yml'
+
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      ansible: ${{ steps.set-matrix.outputs.ansible }}
+      distro: ${{ steps.set-matrix.outputs.distro }}
+      include: ${{ steps.set-matrix.outputs.include }}
+      exclude: ${{ steps.set-matrix.outputs.exclude }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set matrix outputs
+        id: set-matrix
+        run: |
+          include=$(jq -c .${{ github.workflow }}.include .github/matrix.json)
+          [[ "$include" == "null" ]] && include=$(jq -c .include .github/matrix.json)
+          echo "::set-output name=ansible::`jq -c .ansible .github/matrix.json`"
+          echo "::set-output name=distro::`jq -c .distro .github/matrix.json`"
+          echo "::set-output name=include::$include"
+          echo "::set-output name=exclude::`jq -c '.${{ github.workflow }}.exclude // []' .github/matrix.json`"
+          
