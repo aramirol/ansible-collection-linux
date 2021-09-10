@@ -7,7 +7,6 @@
 ## Tested with Ansible
 Tested with Ansible 2.10.x
 
-
 ## Dependencies
 ```yml
 collections:
@@ -32,7 +31,14 @@ Before using the collection, you need to install the collection with the `ansibl
 ansible-galaxy collection install aramirol.linux
 ```
 
-You can also include it in a `requirements.yml` file and install it via `ansible-galaxy collection install -r requirements.yml` using the format:
+You can also include it in a `requirements.yml` file and install it via:
+
+```shell
+ansible-galaxy collection install -r requirements.yml
+```
+
+Using the format:
+
 ```yaml
 collections:
   - aramirol.linux
