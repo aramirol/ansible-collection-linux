@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: false
   roles:
-    - role: bonddim.linux.users
+    - role: aramirol.linux.users
       managed_users:
         - name: ansible
           system: true
