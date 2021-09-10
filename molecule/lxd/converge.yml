@@ -4,4 +4,4 @@
   gather_facts: true
   pre_tasks:
   roles:
-    - bonddim.linux.lxd
+    - aramirol.linux.lxd
