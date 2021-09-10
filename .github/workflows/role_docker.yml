@@ -9,12 +9,12 @@ on:
     paths:
       - 'roles/docker/**'
       - 'molecule/docker/**'
-      - '.github/workflows/role_docker.yaml'
+      - '.github/workflows/role_docker.yml'
   pull_request:
     paths:
       - 'roles/docker/**'
       - 'molecule/docker/**'
-      - '.github/workflows/role_docker.yaml'
+      - '.github/workflows/role_docker.yml'
 
 jobs:
   matrix:
